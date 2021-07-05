@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CG3-A5-ITx">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlashWord" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="最初の文字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9S-a5-9sB">
+                                <rect key="frame" x="18" y="337" width="339" height="179"/>
+                                <color key="backgroundColor" red="0.1040872846" green="0.56255519799999998" blue="0.61926603889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="qqZ-NT-GI1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="50"/>
+                                <color key="textColor" red="0.96451061959999995" green="0.96482044460000005" blue="0.9117005467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="残り10秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-z3-egL">
+                                <rect key="frame" x="32" y="64" width="314" height="47"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <color key="textColor" red="0.96210819479999998" green="0.96278482679999999" blue="0.91211491820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="文字数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNq-j4-BoK">
+                                <rect key="frame" x="20" y="146" width="339" height="169"/>
+                                <color key="backgroundColor" red="0.88320270871506845" green="0.33904109589041098" blue="0.0020906555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="UDR-Xl-8dh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="50"/>
+                                <color key="textColor" red="0.96451061959999995" green="0.96482044460000005" blue="0.9117005467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-Rs-VyO">
+                                <rect key="frame" x="49" y="565" width="276" height="64"/>
+                                <color key="backgroundColor" red="0.96451061959999995" green="0.96482044460000005" blue="0.9117005467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="evq-6K-OMu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <state key="normal" title="カードを引く">
+                                    <color key="titleColor" red="0.25095820429999999" green="0.25099286440000002" blue="0.2509464622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DrawButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yus-ph-5Cz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25095820429999999" green="0.25099286440000002" blue="0.2509464622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="top" secondItem="f9S-a5-9sB" secondAttribute="bottom" constant="30" id="4zq-4m-8TO"/>
+                            <constraint firstItem="f9S-a5-9sB" firstAttribute="top" secondItem="zNq-j4-BoK" secondAttribute="bottom" constant="20" id="DjW-xp-JtC"/>
+                            <constraint firstItem="zNq-j4-BoK" firstAttribute="top" secondItem="TVF-z3-egL" secondAttribute="bottom" constant="20" id="FHK-i1-t4n"/>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HrH-Tn-1Ln"/>
+                            <constraint firstItem="zNq-j4-BoK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hvx-Q3-FAQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zNq-j4-BoK" secondAttribute="trailing" constant="20" id="JMy-1D-byw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jFE-Rs-VyO" secondAttribute="bottom" constant="20" id="Twb-Hq-Wos"/>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Z2j-jo-Y6W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9S-a5-9sB" secondAttribute="trailing" constant="20" id="apP-zx-7ZP"/>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azF-yY-Ii7"/>
+                            <constraint firstItem="f9S-a5-9sB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="daJ-Y0-Ndd"/>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="e5M-dV-JKv"/>
+                            <constraint firstItem="TVF-z3-egL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ez5-P6-zRf"/>
+                            <constraint firstItem="TVF-z3-egL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gmN-Bn-v8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TVF-z3-egL" secondAttribute="trailing" constant="50" id="mXp-er-Qeh"/>
+                            <constraint firstItem="jFE-Rs-VyO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rRW-Dy-LqB"/>
+                            <constraint firstItem="zNq-j4-BoK" firstAttribute="top" secondItem="TVF-z3-egL" secondAttribute="bottom" constant="20" id="tnj-It-icY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4pK-lZ-Iw0">
+                        <barButtonItem key="leftBarButtonItem" title="遊び方" style="plain" id="CJW-lg-TZz" userLabel="遊び方">
+                            <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="HowtoPlayAction:" destination="BYZ-38-t0r" id="pLi-ai-Zj8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="タイマー設定" id="ofg-Jq-0ri">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="NCm-zy-YhX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="CharLabel" destination="f9S-a5-9sB" id="Cll-I9-OhW"/>
+                        <outlet property="NumberLabel" destination="zNq-j4-BoK" id="5vP-gI-8vQ"/>
+                        <outlet property="TimeLabel" destination="TVF-z3-egL" id="lFg-5c-10C"/>
+                        <segue destination="E12-xv-XlN" kind="show" identifier="goHowtoPlay" id="vBi-rL-CBa"/>
+                        <segue destination="4Jl-Uo-Jit" kind="show" identifier="goSetting" id="Vdz-14-PgA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.8" y="100.29985007496252"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Hf-jJ-NMb">
+            <objects>
+                <viewController id="E12-xv-XlN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdr-OY-CP3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="2~7までの数字とひらがなの「を」「ん」を除く清音「あ～わ」が表示されます。 表示された文字数と最初の文字で思いつく単語を制限時間内に答えましょう。 食べ物や地名など、単語にしばりを設けて遊ぶのもオススメです。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O72-dK-lxa">
+                                <rect key="frame" x="30" y="174" width="315" height="463"/>
+                                <color key="backgroundColor" red="0.96891897920000003" green="0.96959561110000003" blue="0.9190029502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.25095820429999999" green="0.25099286440000002" blue="0.2509464622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szn-Qt-tUU">
+                                <rect key="frame" x="30" y="74" width="315" height="80"/>
+                                <color key="backgroundColor" red="0.1040872846" green="0.56255519799999998" blue="0.61926603889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="qN9-kc-57N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="50"/>
+                                <color key="textColor" red="0.96210819479999998" green="0.96278482679999999" blue="0.91211491820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96891897920000003" green="0.96959561110000003" blue="0.9190029502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O72-dK-lxa" firstAttribute="leading" secondItem="tTI-Zs-BYl" secondAttribute="leading" constant="30" id="3RT-lQ-dAV"/>
+                            <constraint firstItem="Szn-Qt-tUU" firstAttribute="top" secondItem="tTI-Zs-BYl" secondAttribute="top" constant="30" id="DfA-sp-tDB"/>
+                            <constraint firstItem="Szn-Qt-tUU" firstAttribute="leading" secondItem="tTI-Zs-BYl" secondAttribute="leading" constant="30" id="FlW-Mn-Xqi"/>
+                            <constraint firstItem="tTI-Zs-BYl" firstAttribute="trailing" secondItem="Szn-Qt-tUU" secondAttribute="trailing" constant="30" id="J59-XI-TYw"/>
+                            <constraint firstItem="tTI-Zs-BYl" firstAttribute="bottom" secondItem="O72-dK-lxa" secondAttribute="bottom" constant="30" id="Xl0-4v-ZaZ"/>
+                            <constraint firstItem="tTI-Zs-BYl" firstAttribute="trailing" secondItem="O72-dK-lxa" secondAttribute="trailing" constant="30" id="ZO5-LO-xQV"/>
+                            <constraint firstItem="O72-dK-lxa" firstAttribute="top" secondItem="Szn-Qt-tUU" secondAttribute="bottom" constant="20" id="mDA-Hp-vea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tTI-Zs-BYl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kow-JP-2yq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IlR-EL-gAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.5797101449277" y="99.776785714285708"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="Roh-xk-iic">
+            <objects>
+                <viewController id="4Jl-Uo-Jit" customClass="SettingViewController" customModule="FlashWord" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w7O-EI-Qon">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYi-kZ-Zhq">
+                                <rect key="frame" x="20" y="164" width="375" height="403"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="vH7-4b-xUM"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="タイマー設定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmB-JA-XgD">
+                                <rect key="frame" x="30" y="64" width="319" height="80"/>
+                                <color key="backgroundColor" red="0.88220274450000002" green="0.33731597660000001" blue="0.0041826707310000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="vDI-T4-50r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="50"/>
+                                <color key="textColor" red="0.96210819479999998" green="0.96278482679999999" blue="0.91211491820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-jd-z7N">
+                                <rect key="frame" x="147" y="437" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="AJV-SX-T0k"/>
+                                    <constraint firstAttribute="height" constant="40" id="rxg-rV-hmi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="30"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="決定">
+                                    <color key="titleColor" red="0.1040872846" green="0.56255519799999998" blue="0.61926603889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="decisionButtonAction:" destination="4Jl-Uo-Jit" eventType="touchUpInside" id="hYG-FC-GXu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96451061959999995" green="0.96482044460000005" blue="0.9117005467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aK9-xe-eC9" firstAttribute="trailing" secondItem="fmB-JA-XgD" secondAttribute="trailing" constant="30" id="2q4-MG-AgX"/>
+                            <constraint firstItem="fmB-JA-XgD" firstAttribute="leading" secondItem="aK9-xe-eC9" secondAttribute="leading" constant="30" id="8TC-aA-vPQ"/>
+                            <constraint firstItem="gYi-kZ-Zhq" firstAttribute="top" secondItem="fmB-JA-XgD" secondAttribute="bottom" constant="20" id="RZd-TM-aKp"/>
+                            <constraint firstItem="aK9-xe-eC9" firstAttribute="bottom" secondItem="UTd-jd-z7N" secondAttribute="bottom" constant="30" id="SXy-xp-ihp"/>
+                            <constraint firstItem="gYi-kZ-Zhq" firstAttribute="leading" secondItem="aK9-xe-eC9" secondAttribute="leading" constant="20" id="SqM-jQ-3eH"/>
+                            <constraint firstItem="aK9-xe-eC9" firstAttribute="trailing" secondItem="gYi-kZ-Zhq" secondAttribute="trailing" constant="20" id="TdQ-Bg-lxq"/>
+                            <constraint firstItem="aK9-xe-eC9" firstAttribute="trailing" secondItem="UTd-jd-z7N" secondAttribute="trailing" constant="50" id="UVG-tA-ZLb"/>
+                            <constraint firstItem="fmB-JA-XgD" firstAttribute="top" secondItem="aK9-xe-eC9" secondAttribute="top" constant="20" id="c4z-wy-vbv"/>
+                            <constraint firstItem="UTd-jd-z7N" firstAttribute="leading" secondItem="aK9-xe-eC9" secondAttribute="leading" constant="50" id="m93-UI-1M1"/>
+                            <constraint firstItem="UTd-jd-z7N" firstAttribute="top" secondItem="gYi-kZ-Zhq" secondAttribute="bottom" constant="30" id="xwe-C0-bcL"/>
+                            <constraint firstItem="gYi-kZ-Zhq" firstAttribute="trailing" secondItem="aK9-xe-eC9" secondAttribute="trailing" constant="20" id="zsb-bK-zIv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aK9-xe-eC9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zop-22-vdN"/>
+                    <connections>
+                        <outlet property="timerSettingPicker" destination="gYi-kZ-Zhq" id="XfZ-E5-dN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6o-bz-Wru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1037.5999999999999" y="792.95352323838085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2GY-JC-UFD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CG3-A5-ITx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8gT-94-ac5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LFf-4p-VuV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nbb-H4-ItH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+</document>
